@@ -75,7 +75,7 @@ Page({
     data: {
         ac: null
     },
-    
+
     onLoad: function () {
         let ac = new AC(this);
     },
@@ -114,6 +114,11 @@ Page({
 ![sele](static/one.jpg)
 
 ![val](static/two.jpg)
+
+# 个性化 
+
+如果你想要自己的样式，可以修改 areaChooser.wxss 来完成你的需求。 
+
 
 # LICENSE
 
