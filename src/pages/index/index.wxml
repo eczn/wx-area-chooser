@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<import src="/component/areaChooser/areaChooser.wxml" />
+<template is="areaChooser" data="{{ ac }}"></template>
+
+<wxs module="stringify">
+module.exports = function(o){
+	return JSON.stringify(o); 
+}
+</wxs>
+
+<view class="container">
+	<view class="title line align-center">地址选择器 DEMO</view>
+
+	<!-- 
+		函数 acPresent 由地址选择器自动创建 请勿在 index.js
+		绑定之后点击这个 button 的时候就会自动弹出地址玄奇
+	-->
+	<button class="line" bindtap="acPresent">弹出地址选择器</button>
+
+	<!-- ac.val 的值形如 '广东省广州市番禺区' -->
+	<view class="result line align-center">{{ ac.val || '~0v0~' }}</view>
+
+	<view class="title line align-center">ac 内部</view>
+
+	<view class="ac-content result line">
+		{{ stringify(ac) }}
+	</view>
+</view>

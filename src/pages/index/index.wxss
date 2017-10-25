@@ -1,0 +1,34 @@
+@import "../../component/areaChooser/areaChooser.wxss";
+
+.container {
+	margin-top: 100rpx; 
+	padding: 20rpx 30rpx; 
+}
+
+.align-center {
+	text-align: center;
+}
+
+.line {
+	margin-top: 3em; 
+	margin-bottom:  1em; 
+}
+
+.title {
+	font-size: 20px; 
+}
+
+.result {
+	background-color: #555; 
+	color: #FFF; 
+	margin-left: -30rpx;
+	margin-right: -30rpx;
+	padding: 2em 1em; 
+	box-sizing: border-box;
+}
+
+.ac-content {
+	white-space: nowrap; 
+	overflow: scroll
+}
+

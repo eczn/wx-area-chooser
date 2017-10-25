@@ -1,0 +1,50 @@
+/* areaChooser.wxss */
+.ac-box {
+	position: fixed; 
+	z-index: 800; 
+	top: 0; 
+	left: 0; 
+	width: 100%;
+	height: 100%; 
+	box-sizing: border-box; 
+	transition: all .3s; 
+}
+
+.ac-hide {
+	visibility: hidden; 
+	background-color: rgba(0, 0, 0, 0); 
+}
+
+.ac-show {
+	visibility: visible; 
+	background-color: rgba(0, 0, 0, .3); 
+}
+
+.ac-picker {
+	position: absolute; 
+	z-index: 800; 
+	width: 100%; 
+	transition: all .3s; 
+	bottom: 0; 
+	background-color: #FFF; 
+}
+
+.ac-picker-show {
+	transform: translateY(0%); 
+}
+
+.ac-picker-hide {
+	transform: translateY(100%); 
+}
+
+.picker-body {
+	text-align: center; 
+}
+
+.ac-btns {
+	display: flex; 
+	border-bottom: 1px solid #EEE; 
+	color: #0080C5; 
+	padding: 20rpx 30rpx; 
+	justify-content: space-between; 
+}
