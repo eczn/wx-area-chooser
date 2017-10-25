@@ -36,14 +36,14 @@
 import AC from '/path/to/areaChooser/areaChooser';
 
 Page({
-	data: {
-		// 这一行不要漏 
-		ac: null
-	},
-	onLoad: function () {
-		// 然后 onload 里面 new 一下 
-		let ac = new AC(this);
-	},
+    data: {
+        // 这一行不要漏 
+        ac: null
+    },
+    onLoad: function () {
+        // 然后 onload 里面 new 一下 
+        let ac = new AC(this);
+    },
 });
 ```
 
@@ -72,20 +72,20 @@ Page({
 import AC from '/path/to/areaChooser/areaChooser';
 
 Page({
-	data: {
-		ac: null
-	},
-	onLoad: function () {
-		let ac = new AC(this);
-	},
-	/**
-	 * 地址选择器回调
-	 * 当地址选择器完成选择的时候将会执行这个函数
-	 * 详细地址是他的参数 selected
-	 */
-	acOnConfirm: function(selected){
-		console.log('[ 确认选择 ]', selected);
-	}
+    data: {
+        ac: null
+    },
+    onLoad: function () {
+        let ac = new AC(this);
+    },
+    /**
+     * 地址选择器回调
+     * 当地址选择器完成选择的时候将会执行这个函数
+     * 详细地址是他的参数 selected
+     */
+    acOnConfirm: function(selected){
+        console.log('[ 确认选择 ]', selected);
+    }
 });
 ```
 
